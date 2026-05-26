@@ -185,6 +185,6 @@
 
 // console.log(message);
 
-let isStudent = true;
-let message = isStudent ? "You are a student" : "You are not a student";
-console.log(message);
+// let isStudent = true;
+// let message = isStudent ? "You are a student" : "You are not a student";
+// console.log(message);
