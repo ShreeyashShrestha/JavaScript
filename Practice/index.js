@@ -188,3 +188,161 @@
 // let isStudent = true;
 // let message = isStudent ? "You are a student" : "You are not a student";
 // console.log(message);
+
+//Switch statement
+
+// let day = "pizza";
+
+// switch (day) {
+//     case 1:
+//         console.log("Sunday");
+//         break;
+//     case 2:
+//         console.log("Monday");
+//         break;
+//     case 3:
+//         console.log("Tuesday");
+//         break;
+//     case 4:
+//         console.log("Wednesday");
+//         break;
+//     case 5:
+//         console.log("Thursday");
+//         break;
+//     case 6:
+//         console.log("Friday");
+//         break;
+//     case 7:
+//         console.log("Saturday");
+//         break;
+//     default:
+//         console.log(`${day} is not a day`);
+// }
+
+//String methods
+
+// let username = "shreeyash   ";
+
+// console.log(username.charAt(0));
+// console.log(username.indexOf("s"));
+// console.log(username.lastIndexOf("s"));
+// console.log(username.length);
+
+// let name = "shreeyash      ";
+// console.log(name.length);
+// name = name.trim();
+// console.log(name);
+// console.log(name.length);
+
+// let username = "shreeyash";
+// let result = username.startsWith(" ");
+// let correct;
+// console.log(result);
+// console.log(username.length);
+
+// if (result) {
+//     correct = username.trim();
+//     console.log(correct);
+//     console.log(correct.length);
+// }else{
+//     console.log(username.length);
+//     console.log(username);
+// }
+
+// let name = "shreeyash  ";
+// let result = name.endsWith(" ");
+// console.log(name.length);
+// if (result) {
+//     name = name.trim();
+//     console.log(name);
+//     console.log(name.length);
+// }else{
+//     console.log(name);
+//     console.log(name.length);
+// }
+
+// let name = "shreeyash shrestha";
+// let result = name.includes(" ");
+// console.log(result);
+
+// let phonenumber = "123-4456-789";
+// let phonenumber2 = phonenumber.replaceAll("-","");
+// console.log(phonenumber2);
+
+// let phonenumber = "123-4456-789";
+// let phonenumber2 = phonenumber.padStart(15,"0");
+// console.log(phonenumber2);
+
+// let phonenumber = "123-4456-789";
+// let phonenumber2 = phonenumber.padEnd(15,"0");
+// console.log(phonenumber2);
+
+// String slicing
+
+// let name = "shreeyash shrestha";
+// let firstname = name.slice(0,9);
+// console.log(firstname);
+
+// let lastname = name.slice(10);
+// console.log(lastname);
+
+// const fullname = "shreeyash shrestha";
+// let firstname = fullname.slice(0,fullname.indexOf(" "));
+// console.log(firstname);
+
+// let lastname = fullname.slice(fullname.indexOf(" ")+1);
+// console.log(lastname);
+
+// const email = "shreeyash@example.com";
+// let username = email.slice(0, email.indexOf("@"));
+// console.log(username);
+
+// let domain = email.slice(email.indexOf("@")+1);
+// console.log(domain);
+
+// No method chaining
+
+// let username = window.prompt("Enter your username: ");
+
+// username = username.trim();
+// let letter = username.charAt(0)
+// letter = letter.toUpperCase();
+
+// let extrachar = username.slice(1);
+// extrachar = extrachar.toLowerCase();
+
+// username = letter + extrachar;
+
+// console.log(username);        
+
+// Method chaining
+
+// let username = window.prompt("Enter your username: ");
+// username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
+// console.log(username);
+
+//logical operators
+// let time =26;
+
+// if (time >=1 && time <=12){
+//     console.log("Good morning");
+// }else if(time > 12 && time <=15){
+//     console.log("Good afternoon");
+// }else if (time >15 && time <=18){
+//     console.log("Good evening");
+// }else if (time >18 && time <=24){
+//     console.log("Good night");
+// }else{
+//     console.log("Invalid time");
+// }
+
+// strict equality operator
+
+// const PI = 3.14159;
+
+// if(PI === "3.14159"){
+//     console.log("This is Pi");
+// }else{
+//     console.log("This is not Pi");
+// }
+
