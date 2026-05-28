@@ -346,3 +346,122 @@
 //     console.log("This is not Pi");
 // }
 
+//While loop
+
+// let username = "";
+// while (username ===""){
+//     console.log("username cannot be empty");
+// }
+
+// let username = "";
+
+// while (username ==="" || username === null){
+//     username = window.prompt("Enter your username: ");
+// }
+// console.log(`Your username is ${username}`);
+
+// do while loop
+// let username;
+
+// do{
+//     username = window.prompt("Enter your username: ");
+// }while (username === "" || username === null);
+// console.log(`Your username is ${username}`);
+
+// let loggedIn = false;
+// let username;
+// let password;
+
+// while (!loggedIn){
+//     username = window.prompt("Enter your username: ");
+//     password = window.prompt("Enter your password: ");
+
+//     if (username === "admin" && password === "password123"){
+//         loggedIn = true;
+//         console.log("You are logged in!");
+//     } else {
+//         console.log("Invalid username or password. Please try again.");
+//     }
+// }
+
+// For loop
+
+// for(let i = 0; i <=3; i++){
+//     console.log(i);
+// }
+
+// for(let i = 10; i >=0; i--){
+//     console.log(i);
+// }
+// console.log("Happy New Year!");
+
+//Contine
+
+// for (let i = 1; i <=20; i++){
+//     if( i == 13){
+//         continue;
+//     }else{
+//         console.log(i);
+//     }
+// }
+
+// for( let i = 1; i <=20; i++){
+//     if(i ==13){
+//         break;
+//     }
+//     else{
+//         console.log(i);
+//     }
+// }
+
+// const min_num = 1;
+// const max_num = 100;
+// const answer = Math.random() * (max_num - min_num +1) + min_num;
+
+// let attempts = 0;
+// let guess;
+// let running = true;
+
+// while(running){
+//     guess = window.prompt(`Guess a number between ${min_num} - ${max_num}: `);
+//     guess = Number(guess);
+
+//     if (isNaN(guess)){
+//         window.alert("Please enter a valid number");
+//     }else if (guess < min_num || guess > max_num){
+//         window.alert("Please enter a valid number");
+//     }else{
+//         attempts++;
+//         if (guess < answer){
+//             window.alert("Too low! Try again.");
+//         }else if (guess > answer){
+//             window.alert("Too high! Try again.");
+//         }else{
+//             window.alert(`Congratulations! You guessed the number in ${attempts} attempts!`);
+//             running = false;
+//         }
+//     }
+// }
+
+// Function
+
+// function happybirthday(username){
+//     console.log("Happy birthday to you!");
+//     console.log(`Happy birthday ${username}`)
+// }
+
+// happybirthday("Shreeyash");
+// happybirthday("Alice");
+
+// function add(num1, num2){
+//     let sum = num1 +num2;
+//     return sum;
+// }
+// console.log(add(3,4));
+
+// function sub(num1, num2){
+//     let difference = num1 - num2;
+//     return difference;
+// }
+
+// console.log(sub(10,5));
