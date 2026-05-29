@@ -465,3 +465,104 @@
 // }
 
 // console.log(sub(10,5));
+
+// VARIABLE SCOPE
+
+// let x = 10;
+
+// function1();
+
+// function function1(){
+//     let x = 5;
+//     console.log(x);
+// }
+
+// function function2(){
+//     let x= 12;
+//     console.log(x);
+// }
+
+// ARRAYs
+
+// let fruits = ["apple", "banana", "orange"];
+// console.log(fruits);
+// console.log(fruits[0]);
+// console.log(fruits[1]);
+// console.log(fruits[2]);
+// console.log(fruits[3]);
+
+// fruits.push("grape");
+// console.log(fruits);
+
+// fruits.pop();
+// console.log(fruits);
+
+// fruits.unshift("grape");
+// console.log(fruits);
+
+// fruits.shift();
+// console.log(fruits);
+
+// let numOfFruits = fruits.length;
+// console.log(numOfFruits);
+
+// let index = fruits.indexOf("orange");
+// console.log(index);
+
+// let fruits = ["apple", "banana", "orange"];
+
+// for (let i = 0; i < fruits.length; i++){
+//     console.log(fruits[i]);
+// }
+
+// fruits.sort();
+// console.log(fruits);
+
+// fruits.sort().reverse();
+// console.log(fruits);
+
+//SPREAD OPERATOR
+
+// let num = [1,2,3];
+
+// let minNum = Math.min(...num);
+// console.log(minNum);
+
+// let maxNum = Math.max(...num);
+// console.log(maxNum);
+
+// let username = "shreeyash shrestha";
+// let letters = [...username];
+// console.log(letters);
+
+// let letters2 = [...username].join("-");
+// console.log(letters2);
+
+// let fruits = ["apple", "banana", "orange"];
+// let vegetables = ["carrot", "broccoli", "spinach"];
+
+// let food = [...fruits, ...vegetables, "bread", "pizza", "burger"];
+
+// console.log(food);
+
+//REST PARAMETER
+
+// const food1 = "pizza";
+// const food2 = "burger";
+// const food3 = "pasta";
+// const food4 = "salad";
+// const food5 = "sushi";
+
+// function openfridge(...foods){
+//     console.log(...foods);
+// }
+
+// openfridge(food1, food2, food3, food4, food5);
+
+// function getfood(...foods){
+//     return foods;
+// }
+
+// const foods = getfood(food1, food2, food3, food4, food5);
+// console.log(foods);
+
