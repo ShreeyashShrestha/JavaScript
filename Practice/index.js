@@ -566,3 +566,196 @@
 // const foods = getfood(food1, food2, food3, food4, food5);
 // console.log(foods);
 
+//Random password generator
+
+// function generatePassword(length, includeLowercase, includeUppercase, includeNumbers, includeSymbols){
+//     const lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
+//     const uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+//     const numberChars = "0123456789";
+//     const symbolChars = "!@#$%^&*()_+";
+
+//     let allowedChars = "";
+//     let password = "";
+
+//     allowedChars += includeLowercase ? lowercaseChars : "";
+//     allowedChars += includeUppercase ? uppercaseChars : "";
+//     allowedChars += includeNumbers ? numberChars : "";
+//     allowedChars += includeSymbols ? symbolChars : "";
+
+//     if(length <=0){
+//         return `(password length must be atleast 1)`;
+//     }
+//     if(allowedChars.length === 0){
+//         return `(at least 1 set of characters needs to be selected)`;
+//     }
+
+//     for(let i = 0; i< length; i++){
+//         const randomIndex = Math.floor(Math.random()* allowedChars.length);
+//         password += allowedChars[randomIndex];
+//     }
+//     return password;
+// }
+// const passwordLength = 12;
+// const includeLowercase = true;
+// const includeUppercase = true;
+// const includeNumbers = true;
+// const includeSymbols = true;
+
+// const password = generatePassword(passwordLength, includeLowercase, includeUppercase, includeNumbers, includeSymbols);
+// console.log(`Generated password: ${password}`);
+
+
+//Callback
+
+// hello(bye);
+// wait();
+
+// function hello(callback){
+//     console.log("Hello!");
+//     callback();
+// }
+
+// function wait(){
+//     console.log("Please wait...");
+// }
+
+// function bye(){
+//     console.log("Goodbye!");
+// }
+
+// ForEach
+
+// let numbers = [1,2,3,4,5];
+
+// numbers.forEach(cube);
+// numbers.forEach(display);
+
+// function double(element, index, array){
+//     array[index] = element * 2;
+// }
+
+// function triple(element, index, array){
+//     array[index] = element * 3;
+// }
+
+// function square(element, index, array){
+//     array[index] = Math.pow(element, 2);
+// }
+
+// function cube(element, index, array){
+//     array[index] = Math.pow(element, 3);
+// }
+
+// function display(element){
+//     console.log(element);
+// }
+
+// let fruits = ["apple", "banana", "orange"];
+
+// fruits.forEach(capitalize);
+// fruits.forEach(display);
+
+// function uppercase(element, index, array){
+//     array[index] = element.toUpperCase();
+// }
+
+// function lowercase(element, index, array){
+//     array[index] = element.toLowerCase();
+// }
+
+// function capitalize(element, index, array){
+//     array[index] = element.charAt(0).toUpperCase() + element.slice(1).toLowerCase();
+// }
+
+// function display(element){
+//     console.log(element);
+// }
+
+// .map()
+
+// const numbers = [1,2,3,4,5];
+// const squares = numbers.map(square);
+// console.log(squares);
+
+// const cubes = numbers.map(cube);
+// console.log(cubes);
+
+// function cube(element){
+//     return Math.pow(element, 3);
+// }
+
+// function square(element){
+//     return Math.pow(element, 2);
+// }
+
+// const students = ["alice", "bob", "charlie", "david", "eve"];
+
+// const capitalizedStudents = students.map(capitalize);
+
+// console.log(students);
+// console.log(capitalizedStudents);
+
+// function capitalize(element){
+//     return element.charAt(0).toUpperCase() + element.slice(1).toLowerCase();
+// }
+
+// .filter()
+
+// let numbers = [1,2,3,4,5,6,7,8,9,10];
+
+// let evennumbers = numbers.filter(isEven);
+// console.log(evennumbers);
+
+// let oddnumbers = numbers.filter(isOdd);
+// console.log(oddnumbers);
+
+// function isOdd(element){
+//     return element % 2 !== 0;
+// }
+// function isEven(element){
+//     return element % 2 === 0;
+// }
+
+// const ages = [15, 22, 18, 30, 12, 25];
+
+// const adults = ages.filter(isAdult);
+// console.log(adults);
+
+// const minors = ages.filter(isMinor);
+// console.log(minors);
+
+// function isAdult(element){
+//     return element >=18;
+// }
+
+// function isMinor(element){
+//     return element < 18;
+// }
+
+// .reduce()
+
+// const prices = [10, 20, 30, 40, 50];
+
+// const total = prices.reduce(sum);
+
+// console.log(`$${total.toFixed(2)}`);
+
+// function sum (accumulator, element){
+//     return accumulator + element;
+// }
+
+// const grades = [85, 92, 78, 90, 88];
+
+// const maxGrade = grades.reduce(findMax);
+// console.log(`The highest grade is ${maxGrade}`);
+
+// const minGrade = grades.reduce(findMin);
+// console.log(`The lowest grade is ${minGrade}`);
+
+// function findMax(accumulator, element){
+//     return Math.max(accumulator, element);
+// }
+
+// function findMin(accumulator, element){
+//     return Math.min(accumulator, element);
+// }
