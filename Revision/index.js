@@ -554,3 +554,187 @@
 // }
 
 
+// array
+
+// let fruits = ["apple", "banana", "orange", "grapes"];
+
+// fruits.push("pineapple");
+
+// fruits.pop();
+
+// fruits.unshift("pineapple");
+
+// fruits.shift("pineapple");
+// console.log(fruits);
+
+// console.log(fruits[0]);
+// console.log(fruits[1]);
+// console.log(fruits[2]);
+// console.log(fruits[3]);
+
+// let numOfFruits = fruits.length;
+// console.log(numOfFruits);
+
+// let index = fruits.indexOf("apple");
+// console.log(index);
+
+// for(let i = 0; i<fruits.length; i ++){
+//     console.log(fruits[i])
+// }
+
+// fruits.sort();
+// console.log(fruits);
+
+// fruits.sort().reverse();
+// console.log(fruits)
+
+// create an array of 5 favourite fruits and print all fruits
+
+// let fruits = ["apple", "banana", "orange", "watermelon", "pineapple"];
+
+// for(let i=0; i<fruits.length; i++){
+//     console.log(fruits[i]);
+// }
+
+// find the length of an array
+
+// const numbers = [10,20,30,40,50];
+
+// let length = numbers.length;
+// console.log(length);
+
+// Print the first and last element of an array
+
+// const fruits = ["apple", "banana", "orange", "watermelon", "pineapple"];
+
+// console.log(fruits[0]);
+// console.log(fruits[fruits.length - 1]);
+
+// const numbers = [10,20,30,40,50];
+
+// console.log(numbers[0]);
+// console.log(numbers[numbers.length - 1])
+
+//Add a new element to the end of an array
+// let numbers = [10,20,30,40,50];
+// numbers.push(60);
+// console.log(numbers);
+
+// Remove the last element.
+// let numbers = [10,20,30,40,50];
+// numbers.pop();
+// console.log(numbers);
+
+// Add an element to the begining
+// let numbers = [10,20,30,40,50];
+// numbers.unshift(0);
+// console.log(numbers);
+
+// Remove the first element
+// let numbers = [10,20,30,40,50];
+// numbers.shift();
+// console.log(numbers);
+
+// Loop through an array and print all elements.
+
+// const numbers = [10,20,30,40,50];
+// for(let i=0; i<numbers.length; i++){
+//     console.log(numbers[i])
+// }
+
+// Find the sum of all numbers in an array
+// const numbers = [10,20,30,40,50];
+// let sum = 0;
+// for(let i=0;i<numbers.length;i++){
+//     sum += numbers[i];
+//     console.log(sum);
+// }
+
+// find the average of numbers in an array
+
+// const numbers = [10,20,30,40,50];
+// let sum = 0;
+// for(let i=0;i<numbers.length;i++){
+//     sum += numbers[i];
+// }
+
+// const average = sum / numbers.length;
+
+// console.log(average);
+
+// Find the largest number in an array
+
+// const numbers = [10,20,30,40,50];
+// let max;
+
+// max = Math.max(...numbers);
+// console.log(max);
+
+// Find the smallest number in an array
+
+// const numbers = [10,20,30,40,50];
+
+// let min = Math.min(...numbers);
+// console.log(min);
+
+// Count how many even numbers are in an array
+// const numbers = [10,20,30,40,50];
+// let count = 0;
+
+// for(let i=0;i<numbers.length;i++){
+//     if(numbers[i] % 2 === 0){
+//         count ++;
+//     }
+// }
+// console.log(count);
+
+// const numbers = [12, 7, 9, 20, 15, 8, 11, 4];
+// let count = 0;
+// for(let i = 0; i<numbers.length; i ++){
+//     if(numbers[i] % 2 === 0){
+//         count ++;
+//     }
+// }
+// console.log(count);
+
+// Count how many odd numbers are in an array.
+// const numbers = [12, 7, 9, 20, 15, 8, 11, 4];
+// let count = 0;
+// for(let i=0; i<numbers.length; i++){
+//     if(numbers[i] % 2 !== 0){
+//         count ++;
+//     }
+// }
+// console.log(count);
+
+// check if a given number exists in an array
+
+// const numbers = [12, 7, 9, 20, 15, 8, 11, 4];
+// let target = 0;
+
+// let found = false;
+
+// for(let i =0; i<numbers.length; i++){
+//     if(numbers[i]===target){
+//         found = true;
+//         break;
+//     }
+// }
+
+// if(found){
+//     console.log("number found")
+// }else{
+//     console.log("number not found")
+// }
+
+// create a new array containing only even numbers
+// const arr = [1, 2, 3, 2, 4, 2, 5];
+// const even = []
+
+// for(let i=0;i<arr.length;i++){
+//     if(arr[i] %2=== 0){
+//         even.push(arr[i]);
+//     }
+// }
+// console.log(even);
+
