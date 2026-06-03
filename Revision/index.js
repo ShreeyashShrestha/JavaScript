@@ -738,3 +738,24 @@
 // }
 // console.log(even);
 
+// let num = [1,2,3,4,5];
+
+// num.forEach(double);
+// num.forEach(display);
+
+// function double(element, index, array){
+//     array[index] = element * 2;
+// }
+
+// function display(element){
+//     console.log(element);
+// }
+
+// const grades = [75, 50, 90, 80, 65, 95];
+
+// const max = grades.reduce(getMax);
+// console.log(max);
+
+// function getMax(accumulator, element){
+//     return Math.max(accumulator, element);
+// }

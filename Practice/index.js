@@ -759,3 +759,151 @@
 // function findMin(accumulator, element){
 //     return Math.min(accumulator, element);
 // }
+
+// function declaration:
+
+// function hello(){
+//     console.log("hello");
+// }
+
+// hello();
+
+// function expressions:
+
+// const hello = function(){
+//     console.log("hello");
+// }
+// hello();
+
+// setTimeout(function(){
+//     console.log("hello");
+// }, 3000);
+
+// const numbers = [1,2,3,4,5,6];
+// function declaration
+// const sqrt = numbers.map(square)
+// console.log(sqrt);
+// function square(element){
+//     return Math.pow(element, 2);
+// }
+
+//function expressions
+// const sqrt = numbers.map(function(element){
+//     return Math.pow(element, 2);
+// })
+// console.log(sqrt);
+
+// const cube1 = numbers.map(cube);
+// console.log(cube1);
+
+// function cube(element){
+//     return Math.pow(element, 3);
+// }
+
+// const even = numbers.filter(geteven);
+// console.log(even);
+
+// function geteven(element){
+//     return element % 2 ===0;
+// }
+
+// const even = numbers.filter(function(element){
+//     return element % 2 === 0;
+// })
+// console.log(even);
+
+// const odd = numbers.filter(getodd);
+// console.log(odd);
+
+// function getodd(element){
+//     return element % 2 !== 0;
+// }
+
+// const odd = numbers.filter(function(element){
+//     return element % 2 !== 0;
+// })
+// console.log(odd);
+
+// const total = numbers.reduce(add);
+// console.log(total);
+// function add(accumulator, element){
+//     return accumulator + element;
+// }
+
+// const total = numbers.reduce(function(accumulator, element){
+//     return accumulator + element;
+// })
+// console.log(total);
+
+// Arrow function:
+
+// ex of function declaration:
+// const numbers = [1,2,3,4,5,6,7,8,9];
+// const sqrt = numbers.map(square);
+// console.log(sqrt);
+// function square(element){
+//     return Math.pow(element, 2);
+// }
+
+// ex of function expression:
+// const sqrt = numbers.map(function(element){
+//     return Math.pow(element, 2);
+// })
+// console.log(sqrt);
+
+// ex of arrow function:
+// const sqrt = numbers.map((element)=> Math.pow(element, 2));
+// console.log(sqrt);
+
+// const cube = numbers.map((element)=> Math.pow(element, 3));
+// console.log(cube);
+
+// const even = numbers.filter((element)=> element %2 === 0);
+// console.log(even);
+
+// const odd = numbers.filter((element)=> element % 2 !== 0);
+// console.log(odd);
+
+// const total = numbers.reduce((accumulator, element)=> accumulator + element);
+// console.log(total);
+
+// Object:
+
+// const person = {
+//     fullname: "Shreeyash Shrestha",
+//     age: 22,
+//     isEmployed: true,
+//     sayHello: function(){console.log("Hello, My name is shreeyash shrestha")},
+//     eat: ()=>console.log("I am eating burger"),
+// }
+
+// console.log(person.age);
+// person.sayHello();
+// person.eat();
+
+// This
+// const person = {
+//     name: "shreeyash",
+//     age: 22,
+//     sayHello: function(){console.log(`Hello! My name is ${this.name} and my age is ${this.age}`)},
+// }
+// person.sayHello();
+
+// Constructor
+function car (make, model, year, color){
+    this.make = make,
+    this.model = model,
+    this.year = year,
+    this.color = color,
+    this.drive = function(){console.log(`You drive the ${this.model}`)}
+}
+
+const car1 = new car("Ford", "Mustang", 2024, "blue");
+const car2 = new car("Chevrolet", "Camaro", 2025, "orange");
+const car3 = new car("Dodge", "Charger", 2026, "black");
+
+console.log(car1.make);
+console.log(car1.model);
+console.log(car1.year);
+console.log(car1.color);
+car1.drive();
