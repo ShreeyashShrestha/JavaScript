@@ -890,20 +890,369 @@
 // person.sayHello();
 
 // Constructor
-function car (make, model, year, color){
-    this.make = make,
-    this.model = model,
-    this.year = year,
-    this.color = color,
-    this.drive = function(){console.log(`You drive the ${this.model}`)}
-}
+// function car (make, model, year, color){
+//     this.make = make,
+//     this.model = model,
+//     this.year = year,
+//     this.color = color,
+//     this.drive = function(){console.log(`You drive the ${this.model}`)}
+// }
 
-const car1 = new car("Ford", "Mustang", 2024, "blue");
-const car2 = new car("Chevrolet", "Camaro", 2025, "orange");
-const car3 = new car("Dodge", "Charger", 2026, "black");
+// const car1 = new car("Ford", "Mustang", 2024, "blue");
+// const car2 = new car("Chevrolet", "Camaro", 2025, "orange");
+// const car3 = new car("Dodge", "Charger", 2026, "black");
 
-console.log(car1.make);
-console.log(car1.model);
-console.log(car1.year);
-console.log(car1.color);
-car1.drive();
+// console.log(car1.make);
+// console.log(car1.model);
+// console.log(car1.year);
+// console.log(car1.color);
+// car1.drive();
+
+// class
+
+// class Product{
+//     constructor(name, price){
+//         this.name = name;
+//         this.price = price;
+//     }
+
+//     displayProduct(){
+//         console.log(`Product: ${this.name}`);
+//         console.log(`Price: ${this.price}`);
+//     }
+
+//     calculateTotal(salesTax){
+//         return this.price + (this.price * salesTax);
+//     }
+// }
+// const salesTax = 0.05;
+// const Product1 = new Product("shirt", 150);
+// const Product2 = new Product("Pants", 350);
+
+// Product2.displayProduct();
+
+// const total = Product2.calculateTotal(salesTax);
+// console.log(`Total price (with tax): $ ${total}`);
+
+// const Product = {
+//     name: "Shirt",
+//     price: 200,
+
+//     displayProduct: function(){
+//         console.log(`Product: ${this.name}`);
+//         console.log(`Price: $${this.price}`);
+//     }
+// }
+
+// console.log(Product.name);
+// console.log(Product.price);
+// Product.displayProduct();
+
+// function Product(name, price){
+//     this.name = name;
+//     this.price = price;
+//     this.displayProduct = function(){
+//         console.log(`Product: ${this.name}`);
+//         console.log(`Price: $${this.price}`);
+//     };
+// }
+
+// const Product1 = new Product("Shirt", 200);
+// const Product2 = new Product("Pants", 350);
+
+// console.log(Product1.name);
+// console.log(Product1.price);
+// Product1.displayProduct();
+
+// Object practice:
+
+// const Student = {
+//     name: "Shreeyash",
+//     age: "22",
+//     course: "computer",
+// }
+
+// const car = {
+//     brand: "Nissan",
+//     model: "GTR",
+// }
+
+// car.year = 2026,
+
+// console.log(Student.name);
+// console.log(Student.age);
+// console.log(Student.course);
+
+// console.log(car.brand);
+// console.log(car.model);
+// console.log(car.year);
+
+// const person = {
+//     name: "Shreeyash",
+//     city: "Kathmandu",
+// }
+
+// person.city = "Bhaktapur";
+
+// console.log(person);
+// console.log(person.city);
+
+// const calculator = {
+//     num1: 2,
+//     num2: 3,
+// }
+
+// calculator.add = function(){
+//     return this.num1 + this.num2;
+// }
+
+// console.log(calculator);
+
+// console.log(calculator.add());
+
+// const person = {
+//     name: "Shreeyash",
+//     age: 22,
+//     city: "Kathmandu",
+//     course: "BCS",
+//     country: "Nepal"
+// };
+
+// const count = Object.keys(person).length;
+
+// console.log(count);
+// console.log(person);
+
+// const book = {
+//     title: "The Alchemist",
+//     author: "Paulo Coelho",
+//     price: 500,
+//     genre: "Fiction"
+// };
+
+// for(let key in book){
+//     console.log(key + ":" , book[key])
+// }
+
+// Constructor Practice:
+
+// function Person(name, age){
+//     this.name = name,
+//     this.age = age
+// }
+
+// const Person1 = new Person("Shreeyash", 22);
+// const Person2 = new Person("Ram", 21);
+
+// console.log(Person1);
+// console.log(Person2);
+
+// function Employee (name, salary){
+//     this.name = name,
+//     this.salary = salary,
+//     this.displayInfo = function(){
+//         console.log(`Name: ${this.name}`);
+//         console.log(`salary: ${this.salary}`);
+//     }
+// }
+
+// const Employee1 = new Employee ("Shreeyash", 100000)
+// const Empleyee2 = new Employee ("Ram", 50000)
+
+// Employee1.displayInfo();
+// Empleyee2.displayInfo();
+
+// function rectangle(width, height){
+//     this.width = width,
+//     this.height = height,
+//     this.getArea = function(){
+//         return this.width * this.height;
+//     }
+// }
+
+// const rectangle1 = new rectangle(2, 3);
+
+// console.log(rectangle1.getArea());
+
+// Class practice
+
+// class student{
+//     constructor(name, age){
+//         this.name = name,
+//         this.age = age
+//     }
+// }
+
+// const student1 = new student("Shreeyash", 22);
+// const student2 = new student("ram", 22);
+
+// console.log(student1.name);
+// console.log(student1.age);
+
+// class car{
+//     constructor(brand, model){
+//         this.brand = brand,
+//         this.model = model
+//     }
+//         displaycar(){
+//             console.log(`brand: ${this.brand}`);
+//             console.log(`model: ${this.model}`);
+//         }
+// }
+
+// const car1 = new car("Nissan", "GTR");
+
+// car1.displaycar();
+
+// class rectangle{
+//     constructor(width, height){
+//         this.width = width,
+//         this.height = height
+//     }
+
+//     getArea(){
+//         return this.height * this.width;
+//     }
+
+//     getPerimeter(){
+//         return 2*(this.width + this.height);
+//     }
+// }
+
+// const rectangle1 = new rectangle(2,3);
+
+// console.log(rectangle1.getArea());
+// console.log(rectangle1.getPerimeter());
+
+// Static
+
+// class MathUtil{
+//     static PI = 3.1415;
+
+//     static getDiameter(radius){
+//         return radius * 2;
+//     }
+
+//     static getCircumference(radius){
+//         return 2 * this.PI * radius;
+//     }
+
+//     static getArea(radius){
+//         return this.PI * radius * radius;
+//     }
+// }
+
+// console.log(MathUtil.PI);
+// console.log(MathUtil.getDiameter(10));
+// console.log(MathUtil.getCircumference(10));
+// console.log(MathUtil.getArea(10));
+
+// class User{
+//     static userCount = 0;
+
+//     constructor(username){
+//         this.username = username;
+//         User.userCount ++;
+//     }
+
+//     static getUserCount(){
+//         console.log(`There are ${User.userCount} users online`); 
+//     }
+
+//     sayHello(){
+//         console.log(`hello, ${this.username}`)
+//     }
+// }
+
+// const user1 = new User("Shreeyash");
+// const user2 = new User("Ram");
+
+// console.log(user1.username);
+// console.log(user2.username);
+// console.log(User.userCount);
+// User.getUserCount();
+// user1.sayHello();
+
+// class MathUtils{
+//     static add(a, b){
+//         return a + b;
+//     }
+// }
+
+// console.log(MathUtils.add(2,3));
+
+// class calculator{
+//     static sub(a, b){
+//         return a-b;
+//     }
+// }
+
+// console.log(calculator.sub(5, 2));
+
+// class operations{
+//     static multiply(a,b){
+//         return a * b;
+//     }
+// }
+// console.log(operations.multiply(2,5))
+
+// class NumberHelper{
+//     static square(n){
+//         return Math.pow(n, 2);
+//     }
+// }
+// console.log(NumberHelper.square(2));
+
+// class Temperature{
+//     static celsiusToFahrenheit(c){
+//         return (c * 9/5) + 32;
+//     }
+// }
+
+// console.log(Temperature.celsiusToFahrenheit(20));
+
+// Inheritance
+
+// class Animal{
+//     alive = true;
+
+//     eat(){
+//         console.log(`This ${this.name} is eating`);
+//     }
+
+//     sleep(){
+//         console.log(`This ${this.name} is sleeping`);
+//     }
+// }
+
+// class Rabbit extends Animal{
+//     name = "rabbit";
+
+//     run(){
+//         console.log(`This ${this.name} is running`);
+//     }
+// }
+
+// class Fish extends Animal{
+//     name = "fish";
+
+//     swim(){
+//         console.log(`This ${this.name} is swimming`);
+//     }
+// }
+
+// class Hawk extends Animal{
+//     name = "hawk";
+
+//     fly(){
+//         console.log(`This ${this.name} is flying`);
+//     }
+// }
+
+// const rabbit = new Rabbit();
+// const fish = new Fish();
+// const hawk = new Hawk();
+
+// console.log(rabbit.alive);
+// rabbit.eat();
+// hawk.fly();
