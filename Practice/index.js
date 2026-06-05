@@ -1256,3 +1256,337 @@
 // console.log(rabbit.alive);
 // rabbit.eat();
 // hawk.fly();
+
+//Super keyword
+
+// class Animal{
+//     constructor(name, age){
+//         this.name = name;
+//         this.age = age;
+//     }
+
+//     move(speed){
+//         console.log(`This ${this.name} moves at a speed of ${speed} mph`);
+//     }
+// }
+
+// class Rabbit extends Animal{
+//     constructor(name, age, runSpeed){
+//         super(name, age);
+//         this.runSpeed = runSpeed;
+//     }
+
+//     run(){
+//         console.log(`This ${this.name} can run`);
+//         super.move(this.runSpeed);
+//     }
+// }
+
+// class Fish extends Animal{
+//     constructor(name, age, swimSpeed){
+//         super(name,age);
+//         this.swimSpeed = swimSpeed;
+//     }
+
+//     swim(){
+//         console.log(`This ${this.name} can swim`);
+//         super.move(this.swimSpeed);
+//     }
+// }
+
+// const rabbit = new Rabbit("rabbit", 3, 25);
+// const fish = new Fish("fish", 1, 10);
+
+// // console.log(rabbit.name);
+// // console.log(fish.name);
+// // console.log(fish);
+// // console.log(rabbit);
+
+// rabbit.run();
+// fish.swim();
+
+// class Animal{
+//     constructor(name){
+//         this.name = name;
+//     }
+//     speak(){
+//         console.log(`${this.name} makes a sound`);
+//     }
+// }
+
+// class Dog extends Animal{
+//     constructor(name){
+//         super(name);
+//     }
+//     speak(){
+//         console.log(`${this.name} barks`);
+//     }
+// }
+
+// const animal = new Animal("Dog");
+// const dog = new Dog("puppy");
+
+// animal.speak();
+// dog.speak();
+
+// class Person{
+//     constructor(name, age){
+//         this.name = name;
+//         this.age = age;
+//     }
+//     displayInfo(){
+//         console.log(`This ${this.name} is ${this.age} yrs old`);
+//     }
+// }
+
+// class Vehicle{
+//     constructor(brand){
+//         this.brand = brand;
+//     }
+//     showBrand(){
+//         console.log(`Brand: ${this.brand}`);
+//     }
+// }
+
+// class Car extends Vehicle{
+//     constructor(brand, model){
+//         super(brand);
+//         this.model = model;
+//     }
+//     showDetails(){
+//         super.showBrand();
+//         console.log(`Model: ${this.model}`);
+//     }
+// }
+
+// const car1 = new Car("Toyota","Corolla");
+
+// car1.showDetails();
+
+// class Employee{
+//     constructor(name, salary){
+//         this.name = name;
+//         this.salary = salary;
+//     }
+//     displayEmployee(){
+//         console.log(`name: ${this.name} salary: ${this.salary}`);
+//     }
+// }
+
+// class Manager extends Employee{
+//     constructor(name, salary, department){
+//         super(name, salary);
+//         this.department = department;
+//     }
+//     displayManager(){
+//         super.displayEmployee();
+//         console.log(`Department: ${this.department}`);
+//     }
+// }
+
+// const manager1 = new Manager("Shreeyash", 100000, "IT");
+
+// manager1.displayManager();
+
+// Getter and Setter
+
+// class Rectangle{
+//     constructor(width, height){
+//         this.width = width;
+//         this.height = height;
+//     }
+
+//     set width(newWidth){
+//         if(newWidth > 0 ){
+//             this._width = newWidth;
+//         }
+//         else{
+//             console.error("Width must be a postitive number");
+//         }
+//     }
+
+//     set height(newHeight){
+//         if(newHeight > 0){
+//             this._height = newHeight;
+//         }
+//         else{
+//             console.error("Height must be a positive number");
+//         }
+//     }
+
+//     get width(){
+//         return `${this._width.toFixed(1)}cm`;
+//     }
+
+//     get height(){
+//         return `${this._height.toFixed(1)}cm`;
+//     }
+
+//     get area(){
+//         return `${(this._width * this._height.toFixed(1))}cm^2`;
+//     }
+// }
+
+// const rectangle = new Rectangle(3,4);
+
+// console.log(rectangle.width);
+// console.log(rectangle.height);
+// console.log(rectangle.area);
+
+// class Person{
+//     constructor(firstName, lastName, age){
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.age = age;
+//     }
+
+//     set firstName(newFirstName){
+//         if(typeof newFirstName === "string" && newFirstName.length > 0){
+//             this._firstName = newFirstName;
+//         }
+//         else{
+//             console.error("first name must be a non-empty string");
+//         }
+//     }
+
+//     set lastName(newLastName){
+//         if(typeof newLastName === "string" && newLastName.length > 0){
+//             this._lastName = newLastName;
+//         }
+//         else{
+//             console.error("last name must be a non-empty string");
+//         }
+//     }
+
+//     set age(newAge){
+//         if(typeof newAge === "number" && newAge >=0){
+//             this._age = newAge;
+//         }
+//         else{
+//             console.error("age must be a non-negative number");
+//         }
+//     }
+
+//     get firstName(){
+//         return this._firstName;
+//     }
+
+//     get lastName(){
+//         return this._lastName;
+//     }
+
+//     get age(){
+//         return this._age;
+//     }
+
+//     get fullname(){
+//         return this._firstName + " " + this._lastName;
+//     }
+// }
+
+// const person = new Person("shreeyash", "shrestha", 22);
+
+// console.log(person.firstName);
+// console.log(person.lastName);
+// console.log(person.fullname);
+// console.log(person.age);
+
+// class Person{
+//     constructor(name){
+//         this.name = name;
+//     }
+
+//     set name(newName){
+//         if(typeof newName === "string" && newName.length >0){
+//             this._name = newName;
+//         }
+//         else{
+//             console.error("Name must be a non empty string");
+//         }
+//     }
+
+//     get name(){
+//         return this._name;
+//     }
+// }
+
+// const person = new Person("shreeyash");
+
+// console.log(person.name);
+
+// class Student{
+//     constructor(name, grade){
+//         this.name = name;
+//         this.grade = grade;
+//     }
+
+//     set name(newName){
+//         if(typeof newName === "string" && newName.length > 0 ){
+//             this._name = newName;
+//         }
+//         else{
+//             console.error("name must be a non empty string");
+//         }
+//     }
+
+//     set grade(newGrade){
+//         if(typeof newGrade === "number" && newGrade >= 0){
+//             this._grade = newGrade;
+//         }
+//         else{
+//             console.error("grades must not be below 0");
+//         }
+//     }
+
+//     get name(){
+//         return this._name;
+//     }
+
+//     get grade(){
+//         return this._grade;
+//     }
+// }
+
+// const student = new Student("shreeyash", 100);
+
+// console.log(student.name);
+// console.log(student.grade);
+
+// class User{
+//     constructor(username, password){
+//         this.username = username;
+//         this.password = password;
+//     }
+
+//     set username(newUsername){
+//         if(typeof newUsername === "string" && newUsername.length > 0){
+//             this._username = newUsername;
+//         }
+//         else{
+//             console.error("username must be a non empty string");
+//         }
+//     }
+
+//     set password(newPassword){
+//         if(typeof newPassword === "string" && newPassword.length >= 8){
+//             this._password = newPassword;
+//         }
+//         else{
+//             console.log("Password must be at least 8 characters long");
+//         }
+//     }
+
+//     get username(){
+//         return this._username;
+//     }
+
+//     get password(){
+//         return this._password;
+//     }
+// }
+
+// const user = new User("shreeyash", "shderewas");
+
+// console.log(user.username);
+// console.log(user.password);
+
