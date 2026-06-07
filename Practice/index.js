@@ -1590,3 +1590,114 @@
 // console.log(user.username);
 // console.log(user.password);
 
+// Destructuring:
+
+// let a = 1;
+// let b = 2;
+
+// console.log(a);
+// console.log(b);
+
+// [a,b]=[b,a];
+
+// console.log(a);
+// console.log(b);
+
+// const colors = ["red","blue","green","yellow","black","white"];
+
+// [colors[0], colors[4]] = [colors[4], colors[0]];
+
+// console.log(colors);
+
+// const colors = ["red","blue","green","yellow","black","white"];
+
+// const[firstColor, secondColor, thirdColor, ...extraColors]=colors;
+
+// console.log(firstColor);
+// console.log(secondColor);
+// console.log(thirdColor);
+// console.log(extraColors);
+
+// const person1 = {
+//     firstName: "shreeyash",
+//     lastName: "shrestha",
+//     age: 22,
+//     job: "Data Engineer",
+// }
+
+// const person2 = {
+//     firstName: "Ram",
+//     lastName: "Shrestha",
+//     age: 34,
+// }
+
+// const{firstName, lastName, age, job="Unemployed"} = person2;
+
+// console.log(firstName);
+// console.log(lastName);
+// console.log(age);
+// console.log(job);
+
+
+// function displayPerson({firstName,lastName,age,job="Unemployed"}){
+//     console.log(`name: ${firstName} ${lastName}`);
+//     console.log(`age: ${age}`);
+//     console.log(`job: ${job}`);
+// }
+
+// const person1 = {
+//     firstName: "shreeyash",
+//     lastName: "shrestha",
+//     age: 22,
+//     job: "Data Engineer",
+// }
+
+// const person2 = {
+//     firstName: "Ram",
+//     lastName: "Shrestha",
+//     age: 34,
+// }
+
+// displayPerson(person2);
+
+
+// nested objects
+
+// const person = {
+//     fullName: "shreeyash shrestha",
+//     age: 30,
+//     isStudent: true,
+//     hobbies: ["karate", "gym", "cooking"],
+//     address: {
+//         street: "old baneshwor",
+//         city: "kathmandu",
+//         country: "Nepal"
+//     }
+// }
+
+// console.log(person.hobbies);
+// console.log(person.address);
+// console.log(person.address.city);
+
+// class person{
+//     constructor(name, age, ...address){
+//         this.name = name;
+//         this.age = age;
+//         this.address = new Address(...address);
+//     }
+// }
+
+// class Address{
+//     constructor(street, city, country){
+//         this.street = street;
+//         this.city = city;
+//         this.country = country;
+//     }
+// }
+
+// const person1 = new person("shreeyash", 22, "baneshwor", "kathmandu", "Nepal");
+
+// console.log(person1.name);
+// console.log(person1.age)
+// console.log(person1.address)
+// console.log(person1.address.street)
