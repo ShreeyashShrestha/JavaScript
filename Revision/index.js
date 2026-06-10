@@ -759,3 +759,355 @@
 // function getMax(accumulator, element){
 //     return Math.max(accumulator, element);
 // }
+
+// hello(leave);
+
+// function hello(callback){
+//     console.log("hello");
+//     callback();
+// }
+
+// function wait(){
+//     console.log("wait!");
+// }
+
+// function leave(){
+//     console.log("leave!");
+// }
+
+// let numbers = [1,2,3,4,5];
+
+// function display(element){
+//     console.log(element);
+// }
+
+// function double(element, index, array){
+//     array[index]= element * 2;
+// }
+
+// numbers.forEach(double);
+// numbers.forEach(display);
+
+// const numbers = [1,2,3,4,5];
+// const squares = numbers.map(square);
+
+// function square(element){
+//     return Math.pow (element, 2);
+// }
+
+// console.log(squares);
+
+// let numbers = [1,2,3,4,5,6,7,8,9,10];
+// let evenNum = numbers.filter(isEven);
+
+// function isEven(element){
+//     return element % 2 === 0;
+// }
+
+// console.log(evenNum);
+
+
+// const prices = [5,30,10,25,15,20];
+// const total = prices.reduce(sum);
+
+// function sum(accumulator, element){
+//     return accumulator + element;
+// }
+
+// console.log(total);
+
+// function hello(){
+//     console.log("hello");
+// }
+
+// hello();
+
+// const hello = function(){
+//     console.log("hello");
+// }
+
+// hello();
+
+// const hello = ()=>console.log("Hello");
+// hello();
+
+// const person = {
+//     firstName: "shreeyash",
+//     lastName: "shrestha",
+//     age: 22,
+//     isEmployed: true,
+//     sayHello: function(){
+//         console.log("Hi")
+//     },
+//     eat: ()=>console.log("I am eating burger")
+// }
+
+// person.sayHello();
+// person.eat();
+// console.log(person.firstName);
+
+// const person = {
+//     name: "shreeyash",
+//     favfood: "burger",
+//     sayHello: function(){console.log(`Hi! I am ${this.favfood}`)},
+// }
+
+// person.sayHello();
+
+// function car(make, model, year, color){
+//     this.make = make;
+//     this.model = model;
+//     this.year = year;
+//     this.color = color;
+//     this.drive = function(){console.log(`You drive the ${this.model}`)}
+// }
+
+// const car1 = new car("Ford","Mustang",2024,"black");
+
+// car1.drive();
+// console.log(car1.make);
+// console.log(car1.model);
+// console.log(car1.year);
+// console.log(car1.color);
+
+// class Product{
+//     constructor(name, price){
+//         this.name = name;
+//         this.price =price;
+//     }
+
+//     displayProduct(){
+//         console.log(`Product: ${this.name}`);
+//         console.log(`Price: ${this.price}`);
+//     }
+// }
+
+// const product1 = new Product("Shirt", 1500);
+// const product2 = new Product("Pants", 3000);
+
+// product1.displayProduct();
+// console.log(product1.name);
+
+// class MathUtils{
+//     static PI = 3.14159;
+
+//     static getDiameter(radius){
+//         return radius * 2;
+//     }
+//     static getCircumference(radius){
+//         return 2 * this.PI * radius * radius;
+//     }
+//     static getArea(radius){
+//         return this.PI * radius * radius;
+//     }
+// }
+
+// console.log(MathUtils.PI);
+// console.log(MathUtils.getDiameter(10));
+// console.log(MathUtils.getCircumference(10));
+// console.log(MathUtils.getArea(10));
+
+// class Animal{
+//    constructor(name,age){
+//     this.name = name;
+//     this.age = age;
+//    }
+
+//    move(speed){
+//     console.log(`This ${this.name} moves at a speed of ${speed}mph`);
+//    }
+// }
+
+// class Rabbit extends Animal{
+//     constructor(name,age,runSpeed){
+//         super(name,age);
+//         this.runSpeed = runSpeed;
+//     }
+
+//     run(){
+//         console.log(`This ${this.name} is running`);
+//         super.move(this.runSpeed);
+//     }
+// }
+
+// class Fish extends Animal{
+//    constructor(name,age,swimSpeed){
+//     super(name,age);
+//     this.swimSpeed = swimSpeed;
+//    }
+
+//     swim(){
+//         console.log(`This ${this.name} is swimming`);
+//         super.move(this.swimSpeed);
+//     }
+// }
+
+// const rabbit = new Rabbit("rabbit",1 ,25);
+// const fish = new Fish("fish",2,12);
+
+// rabbit.run();
+// fish.swim();
+
+// class Person{
+//     constructor(firstName, lastName, age){
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.age = age;
+//     }
+
+//     set firstName(newFirstName){
+//         if(typeof newFirstName === "string" && newFirstName.length>0){
+//             this._firstName = newFirstName;
+//         }
+//         else{
+//             console.error("first name must be a non empty string");
+//         }
+//     }
+
+//     set lastName(newLastName){
+//         if(typeof newLastName === "string" && newLastName.length>0){
+//             this._lastName = newLastName;
+//         }
+//         else{
+//             console.error("last name must be a non empty string");
+//         }
+//     }
+
+//     set age(newAge){
+//         if (typeof newAge === "number" && newAge>=0){
+//             this._age = newAge;
+//         }
+//         else{
+//             console.error("age must be a non negative number");
+//         }
+//     }
+
+//     get firstName(){
+//         return this._firstName;
+//     }
+
+//     get lastName(){
+//         return this._lastName;
+//     }
+
+//     get fullName(){
+//         return this._firstName + this._lastName;
+//     }
+
+//     get age(){
+//         return this._age;
+//     }
+// }
+
+// const person1 = new Person("Shreeyash", "Shrestha", 22);
+
+// console.log(person1.firstName);
+// console.log(person1.lastName);
+// console.log(person1.age);
+// console.log(person1.fullName);
+
+
+// function greet(name, callback){
+//     console.log(`Hello, ${name}`);
+//     callback();
+// }
+
+// function welcome(){
+//     console.log("Welcome!");
+// }
+
+// greet("shreeyash", welcome);
+
+// function calculate(num1, num2, operation){
+//     return operation(num1, num2);
+// }
+
+// function add(a, b){
+//     return a+b;
+// }
+
+// function sub(a,b){
+//     return a-b;
+// }
+
+// function multiply(a,b){
+//     return a*b;
+// }
+
+// console.log(`addition: ${calculate(10,5,add)}`);
+// console.log(`subtraction: ${calculate(10,5,sub)}`)
+// console.log(`multiplication: ${calculate(10,5,multiply)}`)
+
+
+// let fruits = ["apple", "banana", "orange", "grapes", "watermelon"];
+// fruits.forEach(display);
+// function display(element){
+//     console.log(element);
+// }
+
+
+// let numbers = [1,2,3,4,5];
+// numbers.forEach(multiply);
+// numbers.forEach(display);
+
+// function display(element){
+//     console.log(element);
+// }
+// function multiply(element, index, array){
+//     array[index] = element * 2;
+// }
+
+// let names = ["john", "alice", "bob"];
+
+// names.forEach(function(element){
+//     console.log(element);
+// })
+
+// names.forEach((element)=>console.log(element));
+
+
+// let numbers = [10,20,30,40,50];
+// let sum=0
+
+// // numbers.forEach(function(numbers){
+// //     sum += numbers;
+// // })
+
+// numbers.forEach((numbers)=>sum += numbers)
+
+// console.log(sum)
+
+// const numbers = [1,2,3,4,5];
+
+// const double = numbers.map((element)=>element * 2);
+// console.log(double);
+
+// const names = ["Alice", "Bob", "Charlie", "David"];
+
+// const uppernames = names.map(function(names){
+//     return names.toUpperCase();
+// })
+
+// console.log(uppernames)
+
+// const prices = [100,200,300];
+// const newprices = prices.map(convert);
+
+// function convert(element){
+//     return "$" + element;
+// }
+// console.log(newprices)
+
+// const numbers = [1,2,3,4,5];
+// const squarenums = numbers.map(squares);
+// console.log(squarenums);
+// function squares(element){
+//     return Math.pow(element, 2);
+// }
+
+// let nums = [1,2,3,4,5];
+// let evennums = nums.filter(getEven);
+// console.log(evennums)
+// function getEven(element){
+//     return element % 2 === 0;
+// }

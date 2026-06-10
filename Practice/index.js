@@ -1661,7 +1661,7 @@
 // displayPerson(person2);
 
 
-// nested objects
+//nested objects
 
 // const person = {
 //     fullName: "shreeyash shrestha",
@@ -1678,6 +1678,7 @@
 // console.log(person.hobbies);
 // console.log(person.address);
 // console.log(person.address.city);
+
 
 // class person{
 //     constructor(name, age, ...address){
@@ -1701,3 +1702,176 @@
 // console.log(person1.age)
 // console.log(person1.address)
 // console.log(person1.address.street)
+
+//ARRAYS OF OBJECTS:
+
+// const fruits = [{name: "apple", color: "red", calories: 95},
+//                 {name: "banana", color:"yellow", calories: 105},
+//                 {name: "pineapple", color: "yellow", calories: 120},
+//                 {name: "orange", color:"orange", calories: 85}];
+
+// console.log(fruits);
+// console.log(fruits[0]);
+// console.log(fruits[0].name);
+// console.log(fruits[2].color);
+
+// fruits.push({name:"grapes", color:"purple", calories: 62});
+// console.log(fruits)
+
+// fruits.pop();
+// console.log(fruits);
+
+// fruits.splice(1.2);
+// console.log(fruits);
+
+// fruits.forEach(fruit => console.log(fruit));
+// fruits.forEach(fruit => console.log(fruit.name));
+
+// const fruitNames = fruits.map(fruit => fruit.name);
+// console.log(fruitNames);
+
+// const fruitColor = fruits.map(fruit => fruit.color);
+// console.log(fruitColor);
+
+// const fruitCalories = fruits.map((fruit)=>fruit.calories);
+// console.log(fruitCalories);
+
+// SORT
+
+// let fruits = ["apple", "orange", "grapes", "banana"];
+
+// fruits.sort();
+// console.log(fruits);
+
+// let numbers = [10,1,5,6,2,8,3,7,4,9];
+
+// numbers.sort((a,b)=> a - b);
+// numbers.sort((a,b)=>b-a);
+// console.log(numbers);
+
+// const people = [{name: "shreeyash", age:22, gpa:4.0},
+//                 {name: "Ram", age:30, gpa: 3.0},
+//                 {name:"Hari", age:18, gpa:2.0}];
+
+// people.sort((a,b)=> a.age-b.age);
+// people.sort((a,b)=> b.age-a.age);
+// people.sort((a,b)=> a.gpa-b.gpa);
+// people.sort((a,b)=> b.gpa-a.gpa);
+// people.sort((a,b)=> a.name.localeCompare(b.name));
+// people.sort((a,b)=>b.name.localeCompare(a.name));
+
+// console.log(people);
+
+// DATE OBJECTS
+
+// const date = new Date();
+// console.log(date);
+
+// const date = new Date();
+
+// const year = date.getFullYear();
+// const month = date.getMonth();
+// const day = date.getDate();
+// const hour = date.getHours();
+// const min = date.getMinutes();
+// const seconds = date.getSeconds();
+// const dayofweeks = date.getDay();
+// console.log(year)
+// console.log(month)
+// console.log(day)
+// console.log(hour)
+// console.log(min)
+// console.log(seconds)
+// console.log(dayofweeks)
+
+// CLOSURE
+
+// function outer(){
+//     let message = "Hello";
+
+//     function inner(){
+//         console.log(message);
+//     }
+
+//     inner();
+// }
+
+// outer();
+
+// function createGame(){
+//     let score = 0;
+
+//     function increaseScore(points){
+//         score += points;
+//         console.log(`+${points}pts`);
+//     }
+
+//     function decreaseScore(points){
+//         score -= points;
+//         console.log(`-${points}pts`);
+//     }
+
+//     function getScore(){
+//         return score;
+//     }
+
+//     return {increaseScore, decreaseScore, getScore};
+
+// }
+
+// const game = createGame();
+
+// game.increaseScore(5);
+// game.increaseScore(6);
+// game.decreaseScore(3);
+
+// console.log(`The final Score is ${game.getScore()}pts`);
+
+// ES6 MODULE:
+
+// import {PI, getCircumference, getArea} from './mathUtil.js';
+
+// console.log(PI);
+
+// const Circumference = getCircumference(10);
+// const Area = getArea(10);
+
+// console.log(`${Circumference.toFixed(2)}cm`);
+// console.log(`${Area.toFixed(2)}cm^2`);
+
+// Synchronous code:
+
+// console.log("task 1");
+// console.log("task 2");
+// console.log("task 3");
+
+//ASYNCHRONOUS CODE:
+
+// function func1 (callback){
+//     setTimeout(()=>{console.log("Task 1");
+//                     callback()},3000);
+// }
+
+// function func2(){
+//     console.log("task 2");
+//     console.log("task 3");
+
+// }
+
+// func1(func2);
+
+// ERROR HANDLING
+
+// try{
+//     console.log(x);
+// }
+
+// catch(error){
+//     console.error(error);
+// }
+
+// finally{
+//     console.log("This always executes");
+// }
+
+// console.log("You have reached the end!");
