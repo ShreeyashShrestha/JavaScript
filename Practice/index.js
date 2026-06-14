@@ -1875,3 +1875,72 @@
 // }
 
 // console.log("You have reached the end!");
+
+// DOM: Document Object Model
+
+// const username = "";
+// const welcomeMsg = document.getElementById("welcome-msg");
+
+// welcomeMsg.textContent += username === "" ? `Guest` : username;
+
+// console.dir(document);
+
+// DOM NAVIGATION:
+
+// .firstElementChild
+
+// const element = document.getElementById("fruits");
+// const firstChild = element.firstElementChild;
+// firstChild.style.backgroundColor = "yellow";
+
+// const ulElements = document.querySelectorAll("ul");
+
+// ulElements.forEach(ulElement => {
+//     const firstChild = ulElement.firstElementChild;
+//     firstChild.style.backgroundColor = "yellow";
+// }) 
+
+// .lastElementChild
+
+// const element = document.getElementById("vegetables");
+// const lastChild = element.lastElementChild;
+// lastChild.style.backgroundColor = "red";
+
+// const ulElements = document.querySelectorAll("ul");
+// ulElements.forEach(ulElement =>{
+//     const lastChild = ulElement.lastElementChild;
+//     lastChild.style.backgroundColor = "red";
+// });
+
+// .nextElementSibling
+
+// const element = document.getElementById("fruits");
+// const nextSibling = element.nextElementSibling;
+// nextSibling.style.backgroundColor = "yellow";
+
+// .previousElementSibling
+
+// const element = document.getElementById("desserts");
+// const perviousSibling = element.previousElementSibling;
+// perviousSibling.style.backgroundColor = "yellow";
+
+// .parentElement
+
+// const element = document.getElementById("cake");
+// const parent = element.parentElement;
+// parent.style.backgroundColor = "yellow";
+
+// .children
+
+// const element = document.getElementById("fruits");
+// const childern = element.children;
+
+// Array.from(childern).forEach(child => {
+//     child.style.backgroundColor = "yellow";
+// });
+
+// childern[1].style.backgroundColor = "yellow";
+
+// console.log(childern);
+
+
