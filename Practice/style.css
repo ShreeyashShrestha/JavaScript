@@ -1,8 +1,13 @@
-body{
+/* body{
     font-family: verdana;
     font-size: 2em;
 }
 
 #mySubmit{
     font-size: 1em;
+} */
+
+#fruits{
+    border: 3px solid;
+    font-size: 2rem;
 }
