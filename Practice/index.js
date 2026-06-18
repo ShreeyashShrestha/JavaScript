@@ -2170,3 +2170,212 @@ let buttons = document.querySelectorAll(".myButton");
 //         }
 //     })
 // })
+
+// CALLBACK HELL
+
+// function task1(callback){
+//     setTimeout(()=>{
+//         console.log("Task 1 complete");
+//         callback();
+//     },2000);
+// }
+
+// function task2(callback){
+//     setTimeout(()=>{
+//         console.log("Task 2 complete");
+//         callback();
+//     },1500);
+// }
+
+// function task3(callback){
+//     setTimeout(()=>{
+//         console.log("Task 3 complete");
+//         callback();
+//     },3000);
+// }
+
+// function task4(callback){
+//     setTimeout(()=>{
+//         console.log("Task 4 complete");
+//         callback();
+//     },1500);
+// }
+
+// function task5(callback){
+//     setTimeout(()=>{
+//         console.log("Task 5 complete");
+//         callback();
+//     },2000);
+// }
+
+// task1(()=>{
+//     task2(()=>{
+//         task3(()=>{
+//             task4(()=>{
+//                 task5(()=>{
+//                     console.log("All task completed");
+//                 })
+//             })
+//         })
+//     })
+// });
+
+// PROMISE:
+
+// function walkDog(){
+//     return new Promise((resolve, reject)=>{
+//         setTimeout(()=>{
+//             const dogwalked = true;
+
+//             if(dogwalked){
+//                 resolve("You walk the dog");
+//             }
+//             else{
+//                 reject("You didn't walk the dog");
+//             }
+//         }, 1500);
+//     });
+    
+// };
+
+// function cleanKitchen(){
+//     return new Promise((resolve, reject)=>{
+//         setTimeout(()=>{
+//             const kitchenCleaned = true;
+//             if(kitchenCleaned){
+//                 resolve("You clean the Kitchen");
+//             }
+//             else{
+//                 reject("You didn't cleaned the kitchen");
+//             }
+//         }, 2500);
+//     });
+
+// };
+
+// function takeOutTrash(){
+//     return new Promise((resolve, reject)=>{
+//         setTimeout(()=>{
+//             const trashTakenOut = false;
+//             if(trashTakenOut){
+//                 resolve("You take out the trash");
+//             }
+//             else{
+//                 reject("You didn't take out the trash");
+//             }
+//         }, 500);
+//     });
+
+// };
+
+// walkDog().then(value=>{console.log(value); return cleanKitchen()})
+//         .then(value=>{console.log(value); return takeOutTrash()})
+//         .then(value=>{console.log(value); console.log("You finished all the task")})
+//         .catch(error => console.error(error));
+
+
+// ASYNC/AWAIT:
+
+// function walkDog(){
+//     return new Promise((resolve, reject)=>{
+//         setTimeout(()=>{
+//             const dogWalked = true;
+
+//              if(dogWalked){
+//                 resolve("You did walk the dog");
+//              }
+//             else{
+//                 reject("You didn't walk the dog");
+//             }
+//         }, 1500);
+//     });
+// };
+
+// function cleanKitchen(){
+//     return new Promise((resolve, reject)=>{
+//         setTimeout(()=>{
+//             const kitchenCleaned = true;
+//             if(kitchenCleaned){
+//                 resolve("You did cleaned the kitchen");
+//             }
+//             else{
+//                 reject("You didn't cleaned the kitchen");
+//             }
+//         }, 2500);
+//     });
+// };
+
+// function takeOutTrash(){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             const trashTakenOut = true;
+//             if(trashTakenOut){
+//                 resolve("You did take out the trash");
+//             }
+//             else{
+//                 reject("You didn't take out the trash");
+//             }
+//         }, 500);
+//     });
+// };
+
+// async function doChores() {
+//     try{
+//         const walkDogResult = await walkDog();
+//         console.log(walkDogResult);
+
+//         const cleanKitchenResult = await cleanKitchen();
+//         console.log(cleanKitchenResult);
+
+//         const takeOutTrashResult = await takeOutTrash();
+//         console.log(takeOutTrashResult);
+
+//         console.log("You finished all the chores");
+//     }
+
+// catch(error){
+//     console.error(error);
+// }
+// };
+
+// doChores();
+
+// JSON:
+
+// const names = ["Shreeyash","Ram","Sita","Hari"];
+// const peoples = {
+//     "name": "Shreeyash",
+//     "age": 22,
+//     "isEmployed": false,
+//     "hobbies": ["eating", "sleeping", "cooking"]
+// };
+// const persons = [{
+//     "name": "shreeyash",
+//     "age": 22,
+//     "isEmployed": false
+// },
+// {
+//     "name": "Ram",
+//     "age": 30,
+//     "isEmployed": true
+// },
+// {
+//     "name": "Sita",
+//     "age": 29,
+//     "isEmployed":true
+// }];
+
+// const jsonString1 = JSON.stringify(names);
+// const jsonString2 = JSON.stringify(peoples);
+// const jsonString3 = JSON.stringify(persons);
+
+// console.log(jsonString1);
+// console.log(jsonString2);
+// console.log(jsonString3);
+
+// const names = `["Shreeyash","Ram","Sita","Hari"]`;
+
+// const parsedData = JSON.parse(names);
+
+// console.log(names);
+// console.log(parsedData);

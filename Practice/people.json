@@ -1,0 +1,15 @@
+[{
+    "name": "shreeyash",
+    "age": 22,
+    "isEmployed": false
+},
+{
+    "name": "Ram",
+    "age": 30,
+    "isEmployed": true
+},
+{
+    "name": "Sita",
+    "age": 29,
+    "isEmployed":true
+}]
