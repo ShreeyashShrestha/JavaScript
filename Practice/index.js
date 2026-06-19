@@ -2044,7 +2044,7 @@
 
 // NODE LIST
 
-let buttons = document.querySelectorAll(".myButton");
+// let buttons = document.querySelectorAll(".myButton");
 
 // console.log(buttons);
 
@@ -2379,3 +2379,22 @@ let buttons = document.querySelectorAll(".myButton");
 
 // console.log(names);
 // console.log(parsedData);
+
+// FETCH
+
+// fetch("https://pokeapi.co/api/v2/pokemon/ditto")
+//     .then(response => response.json())
+//     .then(data => console.log(data))
+//     .catch(error => console.error(error));
+
+// fetch("https://pokeapi.co/api/v2/pokemon/ditto")
+//     .then(response =>{
+//         if(!response.ok){
+//             throw new Error("Could not fetch resources");
+//         }
+//         return response.json();
+//     })
+//     .then(data => console.log(data))
+//     .catch(error => console.error(error))
+
+
