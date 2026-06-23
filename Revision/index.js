@@ -1111,3 +1111,382 @@
 // function getEven(element){
 //     return element % 2 === 0;
 // }
+
+// function task(){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(()=>{
+//             console.log("Task1 Completed");
+//         },2000);
+//     });
+// }
+
+// task().then (value=>{console.log(value)})
+
+// function rejection(){
+//     return new Promise((resolve, reject)=>{
+//         setTimeout(()=>{
+//             const allGood = false;
+//             if (allGood){
+//                 resolve("All task completed");
+//             }
+//             else{
+//                 reject("Something went wrong");
+//             }
+//         },1000);
+//     })
+// }
+
+// rejection().then(value=>{console.log(value)})
+//             .catch(error=>{console.error(error)});
+
+// function checknumber(num){
+//     return new Promise((resolve, reject)=>{
+//         if(num >=0){
+//             resolve("Positive number");
+//         }
+//         else{
+//             reject("Negative number");
+//         }
+//     })
+// }
+
+// checknumber(2).then(value=>{console.log(value)})
+//                 .catch(error=>{console.log(error)});
+
+
+// function login(){
+//     return new Promise((resolve, reject)=>{
+//         let username = document.getElementById("username").value;
+//         if(username === "admin"){
+//             resolve("Login successful");
+//         }
+//         else{
+//             reject("Invalid username");
+//         }
+//     })
+// }
+
+// function handleLogin() {
+//     login().then(value => {console.log(value)})
+//         .catch(error => {console.error(error)})
+// }
+
+// function greetings(name){
+//     return new Promise((resolve, reject)=>{
+//         setTimeout(()=>{
+//             resolve(`Hello, ${name}`);
+//         },3000);
+//     })
+// }
+
+// greetings("shreeyash").then(value=>{console.log(value)})
+
+// async function welcome() {
+//     return "Welcome to javacript";
+// }
+
+// async function run() {
+//     const result = await welcome();
+//     console.log(result);
+// }
+
+// run();
+
+// function getMessage(){
+//     return new Promise((resolve)=>{
+//         setTimeout(()=>{
+//             resolve ("Task completed")
+//         },2000);
+//     });
+// };
+
+// async function run() {
+//     const result = await getMessage();
+//     console.log(result);
+// };
+
+// run();
+
+// function checkNumber(num){
+//     return new Promise((resolve,reject)=>{
+//         if(num >=0){
+//             resolve("Positive number");
+//         }
+//         else{
+//             reject("Negative number");
+//         }
+//     })
+// }
+
+// async function check(num) {
+//     try{
+//         const result = await checkNumber(num);
+//         console.log(result);
+//     }
+//     catch(error){
+//         console.error(error);
+//     }
+// }
+
+// check(-80);
+// check(5);
+
+// async function greet() {
+//     await new Promise((resolve)=>{
+//         setTimeout(resolve,2000);
+//     });
+//     console.log("hello");
+// }
+
+// greet();
+
+
+// function getData(){
+//     return new Promise((reject)=>{
+//         reject("Something went wrong");
+//     })
+// }
+
+// async function fetchData() {
+//     try {
+//         const result = await getData();
+//         console.log(result);
+//     } catch (error) {
+//         console.error(error);
+//     }
+// }
+
+// fetchData();
+
+// async function task1(){
+//     setTimeout(()=>{
+//         console.log("Task 1 completed");
+//     },1000)
+// }
+
+// async function task2() {
+//     setTimeout(()=>{
+//         console.log("Task 2 completed")
+//     },2000)
+// }
+
+// async function task3() {
+//     setTimeout(()=>{
+//         console.log("Task 3 completed")
+//     },3000)
+// }
+
+// async function run() {
+//     await task1();
+//     await task2();
+//     await task3();
+// };
+
+// run();
+
+// function task1(){
+//     return new Promise((resolve)=>{
+//         setTimeout(()=>{
+//             console.log("Task 1 completed");
+//             resolve();
+//         },1000);
+//     });
+// };
+
+// function task2(){
+//     return new Promise((resolve)=>{
+//         setTimeout(()=>{
+//             console.log("Task 2 completed");
+//             resolve();
+//         },2000);
+//     });
+// };
+
+// function task3(){
+//     return new Promise((resolve)=>{
+//         setTimeout(()=>{
+//             console.log("Task 3 completed");
+//             resolve();
+//         },3000);
+//     });
+// };
+
+// async function run() {
+//     await task1();
+//     await task2();
+//     await task3();
+// }
+
+// run();
+
+// function task1(){
+//     return new Promise((resolve)=>{
+//         setTimeout(()=>{
+//             resolve("Task 1 completed");
+//         },1000);
+//     })
+// }
+
+// function task2(){
+//     return new Promise((resolve)=>{
+//         setTimeout(()=>{
+//             resolve("Task 2 completed");
+//         },2000);
+//     })
+// }
+
+// function task3(){
+//     return new Promise((resolve)=>{
+//         setTimeout(()=>{
+//             resolve("Task 3 completed");
+//         },3000);
+//     })
+// }
+
+// async function run() {
+//     const result = await Promise.all([
+//         task1(),
+//         task2(),
+//         task3()   
+//     ]);
+
+//     console.log(result);
+// }
+
+// run();
+
+
+
+// const student = {
+//     name: "shreeyash",
+//     age: 22,
+//     course: "IT"
+// };
+
+// console.log(student);
+
+// const string = JSON.stringify(student);
+// console.log(string);
+
+// const jsonData = `{"name":"shreeyash","age":22}`;
+
+// console.log(jsonData);
+
+// const parseData = JSON.parse(jsonData);
+// console.log(parseData);
+
+// const jsonData = `{
+//     "name":"shreeyash",
+//     "age":22,
+//     "city":"London"
+// }`;
+
+// console.log(jsonData);
+
+// const parseData = JSON.parse(jsonData);
+
+// console.log(parseData.name);
+// console.log(parseData.age);
+// console.log(parseData.city);
+
+// const jsonData = `[
+//   {"name":"Apple","price":2},
+//   {"name":"Banana","price":1},
+//   {"name":"Orange","price":3}
+// ]`;
+
+// const fruits = JSON.parse(jsonData);
+// fruits.forEach(fruit => {
+//     console.log(fruit.name);
+// })
+
+// const jsonData = `[
+//   {"name":"Apple","price":2},
+//   {"name":"Banana","price":1},
+//   {"name":"Orange","price":3}
+// ]`;
+
+// const fruits = JSON.parse(jsonData);
+
+// let totalPrice = 0;
+
+// fruits.forEach(fruit => {
+//     totalPrice += fruit.price;
+// })
+
+// console.log(`Total Price: ${totalPrice}`);
+
+// const jsonData = `{
+//   "name":"John",
+//   "address":{
+//     "city":"New York",
+//     "country":"USA"
+//   }
+// }`;
+
+// const details = JSON.parse(jsonData);
+
+// console.log(details.address.city)
+
+// const person = '{"name":"Tom","age":22}';
+
+// const parseData = JSON.parse(person);
+
+// parseData.course = "IT";
+
+// const updateParseData = JSON.stringify(parseData);
+// console.log(updateParseData);
+
+// fetch("https://jsonplaceholder.typicode.com/users")
+// .then(response => response.json())
+// .then(data => console.log(data))
+// .catch(error => console.log(error))
+
+// fetch("https://jsonplaceholder.typicode.com/posts")
+//   .then(response => response.json())
+//   .then(data => {
+//     console.log(data);
+//   })
+//   .catch(error => {
+//     console.log("Error:", error);
+//   });
+
+// async function getFirstPosition() {
+//     try {
+//         const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+//         const data = await response.json();
+//         console.log(data[0].title);
+//     } catch (error) {
+//         console.error(error);
+//     }
+// }
+
+// getFirstPosition()
+
+// async function getTotalPosts() {
+//     try {
+//         const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+//         const data = await response.json();
+//         console.log(data.length);
+//     } catch (error) {
+//         console.error(error);
+//     }
+// }
+
+// getTotalPosts();
+
+
+// async function getEmails() {
+//   try {
+//     const response = await fetch("https://jsonplaceholder.typicode.com/users");
+//     const users = await response.json();
+
+//     users.forEach(user => {
+//       console.log(user.email);
+//     });
+//   } catch (error) {
+//     console.log("Error:", error);
+//   }
+// }
+
+// getEmails();
