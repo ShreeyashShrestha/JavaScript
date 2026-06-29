@@ -5,7 +5,6 @@ async function fetchProducts() {
         const response = await fetch('https://fakestoreapi.com/products');
         
         const products = await response.json();
-        console.log(products)
         displayProducts(products);
 
     } catch (error) {
