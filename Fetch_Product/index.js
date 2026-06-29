@@ -5,6 +5,7 @@ async function fetchProducts() {
         const response = await fetch('https://fakestoreapi.com/products');
         
         const products = await response.json();
+        console.log(products)
         displayProducts(products);
 
     } catch (error) {
@@ -17,7 +18,6 @@ function displayProducts(products) {
     container.innerHTML = '';
 
     products.forEach(product => {
-        // Create a card element for each item
         const card = document.createElement('div');
         card.className = 'card';
 
